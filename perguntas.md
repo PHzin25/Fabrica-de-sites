@@ -8,7 +8,7 @@ que paginas já foram criadas?
 Introdução e o formulario e o inicio da primeira parte da historia.
 
 quais ferramentas estão sendo usadas?
-VScode.x
+VScode.
 
 que dificuldades que o grupo encontrou?
 nenhum apenas de entendimento sobre oque era pra já ter feito.
