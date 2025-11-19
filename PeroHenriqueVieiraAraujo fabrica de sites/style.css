@@ -162,3 +162,9 @@ animation: jump 700ms ease-in-out;
     text-shadow: 4px 4px 8px black;
     font-family: Arial, sans-serif;
 }
+footer{
+    position:relative;
+    top:96%;
+    left:0px;
+    color:white;
+}

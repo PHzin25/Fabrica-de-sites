@@ -14,4 +14,4 @@ que dificuldades que o grupo encontrou?
 na estilização
 
 O que falta ate a cuminancia?
-o formulario de feedback as duvidas frequentes e outros jogos de mais 1 ate ums 3
+outros jogos de mais 1 ate ums 3
