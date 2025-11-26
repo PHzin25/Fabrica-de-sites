@@ -23,7 +23,7 @@ jobs:
     outputs:
       page_url: ${{ steps.deploymente.outputs.page_url }}
 
-    enviroument:
+    environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     
