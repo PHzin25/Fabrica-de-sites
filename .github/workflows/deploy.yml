@@ -40,6 +40,6 @@ jobs:
 
           path: "."
 
-      - neme: Deploy to GitHub pages
+      - name: Deploy to GitHub pages
         id: deploymente
         uses: actions/deploy-pages@v4
