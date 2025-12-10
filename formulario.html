@@ -45,52 +45,57 @@
 
     <footer>&copy; Todos os direitos reservados de Pedro Henrique Vieira Araujo</footer>
 
-    <script>
-        function validarForm() {
 
-            let valido = true;
+<script>
+    function validarForm() {
 
-            // EMAIL
-            const email = document.getElementById('email');
-            const emailText = email.value.trim();
+        let valido = true;
 
-            if (!emailText.includes("@")) {
-                valido = false;
-            }
+        // EMAIL
+        const email = document.getElementById('email');
+        const emailText = email.value.trim();
 
+
+        if (!emailText.includes("@")) {
+            valido = false;
+        } else {
             const partesEmail = emailText.split("@");
-            if (partesEmail[0].length < 7 || partesEmail[0].length > 127) {
+
+
+            if (partesEmail[0].length < 3 || partesEmail[0].length > 127) {
                 valido = false;
-            }
-
-            // NOME
-            const nome = document.getElementById("nome");
-            const nomeText = nome.value.trim();
-
-            if (nomeText.length < 3) {
-                valido = false;
-            }
-
-            // MENSAGEM
-            const textarea = document.getElementById("mensagem");
-            const textoMensagem = textarea.value.trim();
-
-            if (textoMensagem === "") {
-                valido = false;
-            }
-
-            // RESULTADO FINAL
-            if (valido) {
-                alert("Recebemos sua mensagem, em breve entraremos em contato!");
-            } else {
-                alert("Há erros no formulário. Corrija para prosseguir.");
             }
         }
 
-        document.addEventListener("submit", function(e) {
-            e.preventDefault();
-            validarForm();
-        });
-    </script>
+        // NOME
+        const nome = document.getElementById("nome");
+        const nomeText = nome.value.trim();
+
+        if (nomeText.length < 3) {
+            valido = false;
+        }
+
+        // MENSAGEM
+        const textarea = document.getElementById("mensagem");
+        const textoMensagem = textarea.value.trim();
+
+        if (textoMensagem === "") {
+            valido = false;
+        }
+
+        // RESULTADO FINAL
+        if (valido) {
+            alert("Recebemos sua mensagem, em breve entraremos em contato!");
+        } else {
+            alert("Há erros no formulário. Corrija para prosseguir.");
+        }
+    }
+
+    document.addEventListener("submit", function(e) {
+        e.preventDefault();
+        validarForm();
+    });
+</script>
+
 </body>
 </html>
